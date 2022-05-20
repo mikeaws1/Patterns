@@ -2,7 +2,6 @@
 
 public abstract class Fakturierer {
    
-    
     public abstract Dokument createDocument();
 
     public void fakturiereDokument() {
