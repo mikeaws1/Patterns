@@ -2,8 +2,8 @@ public class RechnungFakturierer extends Fakturierer {
 
 
     @Override
-    public Dokument createDokument() {
-        return new Rechnung();
+    public Dokument createDocument() {
+        return new Rechnung(1.0, 1);
     }
     
 }

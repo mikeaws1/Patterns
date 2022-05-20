@@ -2,7 +2,7 @@ public abstract class Dokument {
 
     private final int belegnummer;
 
-    public Dokument(int belegnummer) {
+    protected Dokument(int belegnummer) {
         this.belegnummer = belegnummer;
     }
 
