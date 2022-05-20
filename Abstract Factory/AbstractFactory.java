@@ -1,6 +1,10 @@
-public class AbstractFactory {
+public abstract class AbstractFactory {
 
 
-    publ
+
+    public abstract Dokument erzeugeRechung();
+
+    public abstract Dokument erzeugeRueckzahlung();
+
 
 }
