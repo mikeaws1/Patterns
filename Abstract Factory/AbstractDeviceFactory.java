@@ -1,6 +1,4 @@
-public abstract class AbstractFactory {
-
-
+public abstract class AbstractDeviceFactory {
 
     public abstract Device erzeugeDevice();
 
