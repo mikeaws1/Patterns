@@ -1,6 +1,6 @@
 public class BusController implements Device {
 
-    private final Config config;
+    private Config config;
 
     public BusController(Config config) {
         this.config = config;
@@ -15,6 +15,7 @@ public class BusController implements Device {
 
     @Override
     public void setConfig(Config config) {
+        this.config = config;
     }
 
     @Override

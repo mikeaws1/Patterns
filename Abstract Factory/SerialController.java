@@ -1,6 +1,6 @@
 public class SerialController implements Device {
 
-    private final Config config;
+    private Config config;
 
     public SerialController(Config config) {
         this.config = config;
@@ -13,6 +13,7 @@ public class SerialController implements Device {
 
     @Override
     public void setConfig(Config config) {
+        this.config = config;
     }
 
     @Override
