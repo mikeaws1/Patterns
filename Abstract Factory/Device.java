@@ -1,3 +1,3 @@
-public class Device {
+public interface Device {
     
 }
