@@ -1,25 +1,22 @@
 public class SerialController implements Device {
 
+    private final Config config;
 
-    public SerialController() {
-
+    public SerialController(Config config) {
+        this.config = config;
     }
 
     @Override
     public byte[] readData() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public void setConfig(Config config) {
-        // TODO Auto-generated method stub
-        
     }
 
     @Override
     public void writeData(byte[] data) {
-        // TODO Auto-generated method stub
         
     }
     
