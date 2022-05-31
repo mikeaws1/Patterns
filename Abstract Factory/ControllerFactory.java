@@ -10,7 +10,9 @@ public class ControllerFactory extends AbstractDeviceFactory {
         return new SerialController(config);
     }
 
-
-
+    @Override
+    public Device erzeugeClockController(Config config) {
+        return new ClockController(config);
+    }
     
 }
