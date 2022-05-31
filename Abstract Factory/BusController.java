@@ -6,8 +6,6 @@ public class BusController implements Device {
         this.config = config;
     }
 
-
-
     @Override
     public byte[] readData() {
         return null;
@@ -22,5 +20,4 @@ public class BusController implements Device {
     public void writeData(byte[] data) {
         
     }
-    
 }

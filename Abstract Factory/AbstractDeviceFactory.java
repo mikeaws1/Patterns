@@ -1,7 +1,7 @@
 public abstract class AbstractDeviceFactory {
 
-    public abstract Device erzeugeDevice();
+    public abstract Device erzeugeSerialController(Config config);
 
-    public abstract Device erzeugeDD();
+    public abstract Device erzeugeBusController(Config config);
 
 }

@@ -1,6 +1,8 @@
 public class SerialController implements Device {
 
     private Config config;
+    
+    private byte[] buffer;
 
     public SerialController(Config config) {
         this.config = config;
@@ -8,7 +10,7 @@ public class SerialController implements Device {
 
     @Override
     public byte[] readData() {
-        return null;
+        return buffer;
     }
 
     @Override
