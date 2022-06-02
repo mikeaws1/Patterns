@@ -1,16 +1,16 @@
-public class ClockController implements Device {
+public class SerialControllerAdesso implements Device {
 
     private Config config;
+    
+    private byte[] buffer;
 
-    public ClockController(Config config) {
+    public SerialController(Config config) {
         this.config = config;
     }
 
-
     @Override
     public byte[] readData() {
-        Long value = System.nanoTime();
-        return new byte[]{value.byteValue()};
+        return buffer;
     }
 
     @Override
@@ -22,4 +22,6 @@ public class ClockController implements Device {
     public void writeData(byte[] data) {
         
     }
+    
+    
 }

@@ -1,16 +1,14 @@
-public class SerialController implements Device {
+public class BusControllerAdesso implements Device {
 
     private Config config;
-    
-    private byte[] buffer;
 
-    public SerialController(Config config) {
+    public BusController(Config config) {
         this.config = config;
     }
 
     @Override
     public byte[] readData() {
-        return buffer;
+        return null;
     }
 
     @Override
@@ -22,6 +20,4 @@ public class SerialController implements Device {
     public void writeData(byte[] data) {
         
     }
-    
-    
 }

@@ -1,14 +1,16 @@
-public class BusController implements Device {
+public class ClockControllerAdesso implements Device {
 
     private Config config;
 
-    public BusController(Config config) {
+    public ClockController(Config config) {
         this.config = config;
     }
 
+
     @Override
     public byte[] readData() {
-        return null;
+        Long value = System.nanoTime();
+        return new byte[]{value.byteValue()};
     }
 
     @Override
