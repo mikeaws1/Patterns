@@ -6,4 +6,5 @@ public abstract class AbstractDeviceFactory {
 
     public abstract Device erzeugeClockController(Config config);
 
+    public abstract ()
 }
