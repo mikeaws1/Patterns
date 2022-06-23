@@ -1,35 +1,52 @@
-public class QuickSort<E> implements Sort<E> {
+
+public class QuickSort<E extends Comparable<E>> implements Sort<E> {
 
 
     public void sort(E[] array) {
-        int pivot = array.length / 2;
-        int last = array.length - 1;
 
-        if (array.length == 2) {
-            return;
+        qSort(array, 0, array.length - 1);
+    }
+
+    private void qSort(E[] array, int  left, int right) {
+        if (left < right) {
+            int pivot = internalSort(array, left, right);
+            qSort(array, left, pivot);
+            qSort(array, pivot + 1, right);
         }
-
-        for (int i = 0; i <= pivot; i++) {
-
-            if (array[i].compareTo(array[last]) == 1) {
-
-                    E tmp = array[i];
-                    array[i] = array[last];
-                    array[last] = tmp;
-            }
-            last--;
-        }
-
-        sort(array[0..pivot]);
-        sort(array[pivot+1 , last + 1]);
-
     }
 
 
+    private int internalSort(E[] array, int left, int right) {
 
-    public static void main(String[] args) {
+        int pIndex = (right - left) / 2;
+        E pivot = array[pIndex];
+        int i = left;
+        int j = right;
 
-        Sort<String> sort = new QuickSort<>();
+        while (i < j) {
+
+            for (; i < right; i++) {
+                if (array[i].compareTo(pivot) == 1) {
+                    break;
+                }
+            }
+
+            for (; j > left; j--) {
+                if (array[j].compareTo(pivot) == -1 || array[j].compareTo(pivot) == 0) {
+                    break;
+                }
+            }
+
+            if (array[i].compareTo(array[j]) == 1) {
+                E tmp = array[i];
+                array[i] = array[j];
+                array[j] = tmp;
+            }
+
+        }
+
+
+        return pIndex;
     }
 
 }

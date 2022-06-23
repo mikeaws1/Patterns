@@ -1,5 +1,5 @@
 
-public class BubbleSort<E> implements Sort<E> {
+public class BubbleSort<E extends Comparable<E>> implements Sort<E> {
 
 
 
@@ -9,7 +9,7 @@ public class BubbleSort<E> implements Sort<E> {
 
             for (int j = i;  j < array.length; j++) {
 
-                if (array[i].comparTo(array[j]) == 1) {
+                if (array[i].compareTo(array[j]) == 1) {
 
                     E tmp = array[i];
                     array[i] = array[j];
