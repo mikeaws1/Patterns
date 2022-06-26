@@ -8,6 +8,7 @@ public class SerialControllerPCIe implements Device {
 
     public SerialControllerPCIe(Config config) {
         this.config = config;
+        this.buffer = new byte[10];
     }
 
     @Override
@@ -22,7 +23,6 @@ public class SerialControllerPCIe implements Device {
 
     @Override
     public void writeData(byte[] data) {
-
     }
 
 
