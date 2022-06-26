@@ -1,4 +1,4 @@
-package de.adesso.patterns.strategy;
+package de.patterns.strategy;
 
 public class BubbleSort<E extends Comparable<E>> implements Sort<E> {
 

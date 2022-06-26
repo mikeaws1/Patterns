@@ -1,4 +1,4 @@
-package de.adesso.patterns.strategy;
+package de.patterns.strategy;
 
 public class QuickSort<E extends Comparable<E>> implements Sort<E> {
 

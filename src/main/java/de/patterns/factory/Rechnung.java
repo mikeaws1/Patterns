@@ -1,4 +1,4 @@
-package de.adesso.patterns.factory;
+package de.patterns.factory;
 
 public class Rechnung extends Dokument {
 

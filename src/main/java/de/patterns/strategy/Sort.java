@@ -1,4 +1,4 @@
-package de.adesso.patterns.strategy;
+package de.patterns.strategy;
 
 public interface Sort<T extends Comparable<T>> {
 
