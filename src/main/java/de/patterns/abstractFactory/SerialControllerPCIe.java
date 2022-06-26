@@ -1,18 +1,18 @@
-package de.adesso.patterns.abstractFactory;
+package de.patterns.abstractFactory;
 
-public class ClockControllerAdesso implements Device {
+public class SerialControllerPCIe implements Device {
 
     private Config config;
+    
+    private byte[] buffer;
 
-    public ClockControllerAdesso(Config config) {
+    public SerialControllerPCIe(Config config) {
         this.config = config;
     }
 
-
     @Override
     public byte[] readData() {
-        Long value = System.nanoTime();
-        return new byte[]{value.byteValue()};
+        return buffer;
     }
 
     @Override
@@ -24,4 +24,6 @@ public class ClockControllerAdesso implements Device {
     public void writeData(byte[] data) {
         
     }
+    
+    
 }

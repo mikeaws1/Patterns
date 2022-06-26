@@ -1,4 +1,4 @@
-package de.adesso.patterns.abstractFactory;
+package de.patterns.abstractFactory;
 
 public interface Device {
     

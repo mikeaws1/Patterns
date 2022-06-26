@@ -1,16 +1,18 @@
-package de.adesso.patterns.abstractFactory;
+package de.patterns.abstractFactory;
 
-public class BusControllerAdesso implements Device {
+public class ClockControllerPCIe implements Device {
 
     private Config config;
 
-    public BusControllerAdesso(Config config) {
+    public ClockControllerPCIe(Config config) {
         this.config = config;
     }
 
+
     @Override
     public byte[] readData() {
-        return null;
+        Long value = System.nanoTime();
+        return new byte[]{value.byteValue()};
     }
 
     @Override
