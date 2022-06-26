@@ -1,20 +1,25 @@
 package de.patterns.bridge;
 
+import java.net.URL;
+
 public class DatabaseStorageProvider implements StorageProvider {
+    private final URL dataBase;
 
-    public DatabaseStorageProvider() {
-
+    public DatabaseStorageProvider(URL dataBase) {
+        this.dataBase = dataBase;
     }
 
 
 
     @Override
-    public void load() {
+    public Data load(String ref) {
 
+        Data data = new Data();
+        return data;
     }
 
     @Override
-    public void save() {
+    public void save(Data data) {
 
     }
 }

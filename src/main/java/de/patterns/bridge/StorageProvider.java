@@ -1,7 +1,9 @@
 package de.patterns.bridge;
 
+import java.io.FileNotFoundException;
+
 public interface StorageProvider {
 
-    void load();
-    void save();
+    Data load(String ref);
+    void save(Data data);
 }
