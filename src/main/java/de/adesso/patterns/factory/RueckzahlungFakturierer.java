@@ -1,3 +1,4 @@
+package de.adesso.patterns.factory;
 
 public class RueckzahlungFakturierer extends Fakturierer {
 

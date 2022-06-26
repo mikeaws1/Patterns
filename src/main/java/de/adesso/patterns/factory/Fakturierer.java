@@ -1,4 +1,4 @@
-
+package de.adesso.patterns.factory;
 
 public abstract class Fakturierer {
    

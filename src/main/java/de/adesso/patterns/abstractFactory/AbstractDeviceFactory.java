@@ -1,3 +1,5 @@
+package de.adesso.patterns.abstractFactory;
+
 public abstract class AbstractDeviceFactory {
 
     public abstract Device erzeugeSerialController(Config config);
@@ -6,5 +8,4 @@ public abstract class AbstractDeviceFactory {
 
     public abstract Device erzeugeClockController(Config config);
 
-    public abstract ()
 }

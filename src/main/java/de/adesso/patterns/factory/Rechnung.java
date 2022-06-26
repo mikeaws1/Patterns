@@ -1,3 +1,5 @@
+package de.adesso.patterns.factory;
+
 public class Rechnung extends Dokument {
 
     private final double betrag;

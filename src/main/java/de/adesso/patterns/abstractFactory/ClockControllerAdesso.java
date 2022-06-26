@@ -1,8 +1,10 @@
+package de.adesso.patterns.abstractFactory;
+
 public class ClockControllerAdesso implements Device {
 
     private Config config;
 
-    public ClockController(Config config) {
+    public ClockControllerAdesso(Config config) {
         this.config = config;
     }
 

@@ -1,7 +1,6 @@
+package de.adesso.patterns.strategy;
 
 public class BubbleSort<E extends Comparable<E>> implements Sort<E> {
-
-
 
     public void sort(E[] array) {
 

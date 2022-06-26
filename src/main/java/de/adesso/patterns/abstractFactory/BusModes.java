@@ -1,3 +1,5 @@
+package de.adesso.patterns.abstractFactory;
+
 public enum BusModes {
 
     READ_ONLY(1),

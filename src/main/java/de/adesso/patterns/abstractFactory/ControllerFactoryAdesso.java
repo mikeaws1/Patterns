@@ -1,3 +1,5 @@
+package de.adesso.patterns.abstractFactory;
+
 public class ControllerFactoryAdesso extends AbstractDeviceFactory {
 
     private static ControllerFactoryAdesso FACTORY = new ControllerFactoryAdesso();
@@ -24,6 +26,7 @@ public class ControllerFactoryAdesso extends AbstractDeviceFactory {
     
 
     public static void main() {
+        Config config = new Config(23, BusModes.READ_ONLY);
         ControllerFactoryAdesso.getAbstractDeviceFactory().erzeugeBusController(config);
     }
 

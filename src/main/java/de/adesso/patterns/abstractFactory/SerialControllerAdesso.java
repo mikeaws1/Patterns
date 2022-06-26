@@ -1,10 +1,12 @@
+package de.adesso.patterns.abstractFactory;
+
 public class SerialControllerAdesso implements Device {
 
     private Config config;
     
     private byte[] buffer;
 
-    public SerialController(Config config) {
+    public SerialControllerAdesso(Config config) {
         this.config = config;
     }
 

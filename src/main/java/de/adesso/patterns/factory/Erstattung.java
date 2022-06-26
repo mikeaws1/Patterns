@@ -1,3 +1,5 @@
+package de.adesso.patterns.factory;
+
 public class Erstattung extends Dokument {
 
     private double rueckzahlung;

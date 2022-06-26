@@ -1,3 +1,5 @@
+package de.adesso.patterns.factory;
+
 public abstract class Dokument {
 
     private final int belegnummer;

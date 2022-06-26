@@ -1,3 +1,5 @@
+package de.adesso.patterns.abstractFactory;
+
 public class Config {
 
     private int address;

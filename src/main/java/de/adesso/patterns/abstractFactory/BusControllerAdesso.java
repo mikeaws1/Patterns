@@ -1,8 +1,10 @@
+package de.adesso.patterns.abstractFactory;
+
 public class BusControllerAdesso implements Device {
 
     private Config config;
 
-    public BusController(Config config) {
+    public BusControllerAdesso(Config config) {
         this.config = config;
     }
 
