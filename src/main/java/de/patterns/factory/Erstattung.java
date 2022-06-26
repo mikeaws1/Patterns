@@ -13,5 +13,5 @@ public class Erstattung extends Dokument {
     public boolean isDokumentValide() {
         return super.getBelegnummer() > 0 && rueckzahlung > 0 && rueckzahlung < 100;
     }
-    
+
 }

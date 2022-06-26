@@ -3,7 +3,7 @@ package de.patterns.abstractFactory;
 public class SerialControllerPCIe implements Device {
 
     private Config config;
-    
+
     private byte[] buffer;
 
     public SerialControllerPCIe(Config config) {
@@ -22,8 +22,8 @@ public class SerialControllerPCIe implements Device {
 
     @Override
     public void writeData(byte[] data) {
-        
+
     }
-    
-    
+
+
 }

@@ -22,8 +22,8 @@ public class ControllerFactoryPCIe extends AbstractDeviceFactory {
 
     public static AbstractDeviceFactory getAbstractDeviceFactory() {
         return FACTORY;
-    } 
-    
+    }
+
 
     public static void main() {
         Config config = new Config(23, BusModes.READ_ONLY);

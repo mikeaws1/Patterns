@@ -8,7 +8,7 @@ public class QuickSort<E extends Comparable<E>> implements Sort<E> {
         qSort(array, 0, array.length - 1);
     }
 
-    private void qSort(E[] array, int  left, int right) {
+    private void qSort(E[] array, int left, int right) {
         if (left < right) {
             int pivot = internalSort(array, left, right);
             qSort(array, left, pivot);
@@ -52,8 +52,8 @@ public class QuickSort<E extends Comparable<E>> implements Sort<E> {
 
     //Vorteile: 
     // - Interfaceimplementierung macht Client unabhängig von konreter Implementierung
-   // - Kapselung des konkreten Algorithmus, fördert Übersichtlichkeit und Wartbarkeit
-   // -  Wiederverwendbarkeit
+    // - Kapselung des konkreten Algorithmus, fördert Übersichtlichkeit und Wartbarkeit
+    // -  Wiederverwendbarkeit
     // - Neue Algorithmen einfach hinzufügbar
     //Nachteile: Strategy Pattern
     // - Viele Klassen nötig, müssen zumindest im Resolver bekannt sein.

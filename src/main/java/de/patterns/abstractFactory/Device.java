@@ -1,7 +1,7 @@
 package de.patterns.abstractFactory;
 
 public interface Device {
-    
+
 
     byte[] readData();
 

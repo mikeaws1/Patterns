@@ -1,8 +1,9 @@
 package de.patterns.abstractFactory;
 
-public class SerialControllerPCI implements Device{
+public class SerialControllerPCI implements Device {
 
-    public SerialControllerPCI(Config config) {}
+    public SerialControllerPCI(Config config) {
+    }
 
     @Override
     public byte[] readData() {

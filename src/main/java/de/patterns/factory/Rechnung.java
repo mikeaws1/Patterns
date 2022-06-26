@@ -4,7 +4,7 @@ public class Rechnung extends Dokument {
 
     private final double betrag;
 
-    protected Rechnung(double betrag, int belegnummer)  {
+    protected Rechnung(double betrag, int belegnummer) {
         super(belegnummer);
         this.betrag = betrag;
     }

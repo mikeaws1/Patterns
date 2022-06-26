@@ -3,14 +3,13 @@ package de.patterns.abstractFactory;
 public class Config {
 
     private int address;
-
     private BusModes mode;
 
     public Config(int address, BusModes mode) {
         this.address = address;
         this.mode = mode;
     }
-    
+
     public int getAddress() {
         return this.address;
     }
@@ -23,5 +22,5 @@ public class Config {
         this.mode = mode;
     }
 
-    
+
 }

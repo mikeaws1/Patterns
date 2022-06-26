@@ -20,6 +20,6 @@ public class BusControllerPCIe implements Device {
 
     @Override
     public void writeData(byte[] data) {
-        
+
     }
 }

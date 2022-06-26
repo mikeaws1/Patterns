@@ -1,7 +1,7 @@
 package de.patterns.factory;
 
 public abstract class Fakturierer {
-   
+
     public abstract Dokument createDocument();
 
     public void fakturiereDokument() {
@@ -11,8 +11,8 @@ public abstract class Fakturierer {
             verarbeiteDokument(dokument);
         }
     }
-    
+
     private void verarbeiteDokument(Dokument dokument) {
-            //.. Mach irgendwas
+        //.. Mach irgendwas
     }
 }

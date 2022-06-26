@@ -2,7 +2,8 @@ package de.patterns.abstractFactory;
 
 public class ClockControllerPCI implements Device {
 
-    public ClockControllerPCI(Config config) {}
+    public ClockControllerPCI(Config config) {
+    }
 
     @Override
     public byte[] readData() {

@@ -7,5 +7,5 @@ public class RechnungFakturierer extends Fakturierer {
     public Dokument createDocument() {
         return new Rechnung(1.0, 1);
     }
-    
+
 }

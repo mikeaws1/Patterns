@@ -1,8 +1,9 @@
 package de.patterns.abstractFactory;
 
-public class BusControllerPCI implements Device{
+public class BusControllerPCI implements Device {
 
-    public BusControllerPCI(Config config) {}
+    public BusControllerPCI(Config config) {
+    }
 
     @Override
     public byte[] readData() {

@@ -13,5 +13,5 @@ public abstract class Dokument {
     }
 
     public abstract boolean isDokumentValide();
-    
+
 }

@@ -22,6 +22,6 @@ public class ClockControllerPCIe implements Device {
 
     @Override
     public void writeData(byte[] data) {
-        
+
     }
 }
