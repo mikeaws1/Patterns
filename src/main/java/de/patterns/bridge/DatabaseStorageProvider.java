@@ -15,11 +15,13 @@ public class DatabaseStorageProvider implements StorageProvider {
     public Data load(String ref) {
 
         Data data = new Data();
+        //Laden aus der Datenbank
         return data;
     }
 
     @Override
     public void save(Data data) {
+        //Speichern in der Datenbank
 
     }
 }

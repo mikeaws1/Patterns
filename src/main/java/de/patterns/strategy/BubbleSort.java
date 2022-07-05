@@ -1,7 +1,6 @@
 package de.patterns.strategy;
 
 public class BubbleSort<E extends Comparable<E>> implements Sort<E> {
-
     public void sort(E[] array) {
 
         for (int i = 0; i < array.length; i++) {

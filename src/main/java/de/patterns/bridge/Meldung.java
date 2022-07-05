@@ -1,18 +1,19 @@
 package de.patterns.bridge;
 
-public class Meldung extends AbstractObject {
+public class Meldung extends de.patterns.bridge.AbstractObject {
 
     private String meldungsId;
 
     private String vertragsnummer;
 
 
-    public Meldung(StorageProvider storageProvider) {
+    public Meldung(de.patterns.bridge.StorageProvider storageProvider) {
         super(storageProvider);
     }
 
     @Override
     public void speichern() {
+
     }
 
     @Override

@@ -2,7 +2,7 @@ package de.patterns.bridge;
 
 public abstract class AbstractObject {
 
-    private final StorageProvider storageProvider;
+    protected  final StorageProvider storageProvider;
 
 
     public AbstractObject(StorageProvider storageProvider) {

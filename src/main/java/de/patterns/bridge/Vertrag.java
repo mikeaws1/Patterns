@@ -3,6 +3,7 @@ package de.patterns.bridge;
 public class Vertrag extends AbstractObject {
 
     private String vertragsnummer;
+    private Data data;
 
 
     public Vertrag(StorageProvider storageProvider) {
@@ -11,11 +12,11 @@ public class Vertrag extends AbstractObject {
 
     @Override
     public void speichern() {
-
+        storageProvider.save(data);
     }
 
     @Override
     public void laden() {
-
+        data = storageProvider.load(vertragsnummer);
     }
 }
